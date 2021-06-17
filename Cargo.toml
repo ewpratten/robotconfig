@@ -1,17 +1,19 @@
 [package]
-name = "rust-lib-template"
+name = "robotconfig"
 version = "0.1.0"
 authors = ["Evan Pratten <ewpratten@gmail.com>"]
 edition = "2018"
-description = "<description>"
+description = "Runtime configuration of hardware addresses and parameters using JSON"
 documentation = "https://docs.rs/robotconfig"
 readme = "README.md"
 homepage = "https://github.com/ewpratten/robotconfig"
 repository = "https://github.com/ewpratten/robotconfig"
 license = "GPL-3.0"
-keywords = []
-categories = []
+keywords = ["robotics", "lib5k"]
+categories = ["robotics", "embedded"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+serde = { version = "1.0.126", features = ["derive"] }
+serde_json = "1.0.64"

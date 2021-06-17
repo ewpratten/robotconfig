@@ -1,7 +1,3 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
-}
+//!  This crate contains all the needed definitions to parse Lib5K RobotConfig files in Rust
+
+pub mod types;
